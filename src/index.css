@@ -1,0 +1,259 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes(px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- Font weights:
+
+
+- line heights:
+
+
+--- 02 COLOURS 
+- Primary: #087f5b;
+
+- Tints:
+
+
+- Accents:
+- Greys
+
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+
+--- 07 WHITE SPACE
+
+- SPACING SYSTEM(px) :
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1;
+  font-weight: 400;
+  color: #343a40;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  /* column-gap: 6.4rem; */
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+}
+
+.Hero-Image {
+  background-color: #343a40;
+}
+
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* HERO SECTION */
+
+.Hero-Content {
+  background-color: #087f5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.2rem;
+  height: 100vh;
+}
+
+.Heading-primary {
+  font-size: 7.4rem;
+  font-weight: 700;
+  line-height: 0.9;
+  color: #ffffff;
+  margin-bottom: 3.2rem;
+}
+
+.descriptive-text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #e6fcf5;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  font-family: "Inter";
+  font-weight: bold;
+  border-radius: 300px;
+  border: none;
+}
+
+.icon {
+  text-align: center;
+  color: #087f5b;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+/*  HOW IT WORKS SECTION  */
+.section-howitworks {
+  height: 50vh;
+  padding: 9.6rem 3.2rem;
+}
+
+.Heading-secondary {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  gap: 3.2rem;
+  padding: 3.2rem 0;
+}
+
+.howitworks-card {
+  padding: 2.4rem;
+  border: none;
+  border-radius: 11px;
+}
+
+.card-icons {
+  height: 3.6rem;
+  width: 3.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #087f5b;
+  background-color: #96f2d7;
+  border-radius: 50%;
+
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #343a40;
+}
+
+.card-description {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+/* SECTION NOTES */
+
+.section-Notes {
+  padding: 9.6rem 3.2rem;
+  height: 70vh;
+}
+
+.AI-generator,
+.drag-n-drop {
+  border: none;
+  border-radius: 12px;
+  padding: 4.8rem;
+  color: #ffffff;
+  background-color: #087f5b;
+  /* box-shadow: 0 0 0px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.NotesMaker {
+  gap: 4.8rem;
+  padding: 4.8rem 0;
+}
+
+.Heading-tertiary {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 4.8rem;
+}
+
+.Upload-files {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-icon {
+  font-size: 4.8rem;
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.input-label {
+  border: 2px dashed #fff;
+  font-size: 1.6rem;
+  border-radius: 9px;
+  padding: 6.4rem 2.4rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+#document {
+  padding: 4.8rem;
+  display: none;
+}
+
+.AI-generator {
+  display: flex;
+  flex-direction: column;
+}
+
+.AI-generator label {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.AI-generator input {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  border: none;
+  line-height: 1.6rem;
+  border-radius: 5px;
+  margin-bottom: 3.2rem;
+}
