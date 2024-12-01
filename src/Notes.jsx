@@ -6,7 +6,7 @@ export default function Notes() {
         <div className="drag-n-drop">
           <p className="Heading-tertiary">Upload Files</p>
           <div className="Upload-files">
-            <label htmlFor="#document" className="input-label">
+            <label htmlFor="document" className="input-label">
               <figure className="upload-icon">
                 <ion-icon name="cloud-upload-outline"></ion-icon>
               </figure>
@@ -15,6 +15,7 @@ export default function Notes() {
                 type="file"
                 id="document"
                 placeholder="Drag and drop a file here, or click to select a file"
+                hidden
               />
             </label>
           </div>

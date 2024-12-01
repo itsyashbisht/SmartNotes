@@ -30,7 +30,7 @@ const cards = [
 export default function Howitworks() {
   return (
     <section className="section-howitworks container">
-      <h2 className="Heading-secondary">How it Works</h2>
+      <h2 className="Heading-secondary">How SmartNotes Works</h2>
       <div className="cards grid grid-col-4">
         {cards.map((card) => (
           <HowitworksCard card={card} key={card.title} />
