@@ -1,3 +1,6 @@
+// import ChatBot from "./ChatBot";
+import YourNotes from "./YourNotes";
+
 export default function Notes() {
   return (
     <div className="container section-Notes">
@@ -20,18 +23,8 @@ export default function Notes() {
             </label>
           </div>
         </div>
-        <div className="AI-generator">
-          <p className="Heading-tertiary">AI Notes Generator</p>
-          <label htmlFor="#ai-search">Enter a topic</label>
-          <input
-            type="text"
-            id="ai-search"
-            placeholder="e.g., Quantum Computing"
-          />
-          <button className="btn">
-            <span>Generate Notes</span>
-          </button>
-        </div>
+        <YourNotes />
+        {/* <ChatBot /> */}
       </div>
     </div>
   );
